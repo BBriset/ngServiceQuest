@@ -9,7 +9,7 @@ import { CocktailService } from '../Cocktail.service';
 export class CocktailListComponent implements OnInit {
   cocktails: Cocktail[] = [];
   constructor(public CocktailService: CocktailService) {
-    this.cocktails.push(this.CocktailService.getCocktails());
+    this.cocktails = this.CocktailService.getCocktails();
   }
 
   test() {

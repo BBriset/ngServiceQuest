@@ -5,11 +5,18 @@ import { Cocktail } from './cocktail';
 })
 export class CocktailService {
   constructor() {}
-  public getCocktails(): any {
-    return new Cocktail(
-      'mojito',
-      8,
-      'https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg'
-    );
+  public getCocktails(): Cocktail[] {
+    return [
+      new Cocktail(
+        'mojito',
+        8,
+        'https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg'
+      ),
+      new Cocktail(
+        'Old Fashioned',
+        8,
+        'https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg'
+      ),
+    ];
   }
 }
